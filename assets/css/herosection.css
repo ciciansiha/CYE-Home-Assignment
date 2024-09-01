@@ -1,0 +1,73 @@
+#hero-section {
+    padding-top: 45px;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+}
+
+.header {
+    display: flex;
+    padding-right: 120px;
+}
+
+.header-logo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    position: relative;
+}
+
+.header-logo .logo-image {
+    position: relative;
+}
+
+.logo-text {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px; /* probably won't need it */
+}
+
+.logo-rectangle-8 {
+    position: relative;
+    z-index: 0;
+}
+
+.logo-rectangle-9 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+.header-menu {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.menu-item {
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #FFFFFF4D;
+    border-radius: 32px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.menu-item:nth-child(3) {
+    margin-right: 30px;
+    
+}
+
+.hero-content {
+    margin-top: 300px;
+    display: flex;
+    background-color: lightblue;
+}

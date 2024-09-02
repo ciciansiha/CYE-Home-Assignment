@@ -61,13 +61,20 @@
 
 }
 
-.menu-item:nth-child(3) {
-    margin-right: 30px;
-    
+.menu-item:nth-child(4) {
+    margin-left: 30px;
+    padding: 12px 24px 12px 24px;
+    border: 0px;
+    color: #047857;
+    background-color: #D1FAE5;
 }
+
+/* .menu-item .arrow-dropdown {
+    
+} */
 
 .hero-content {
     margin-top: 300px;
     display: flex;
-    background-color: lightblue;
+    background-color: red;
 }

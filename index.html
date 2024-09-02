@@ -4,6 +4,11 @@
     <title>Hounter</title>
     <link rel="stylesheet" type="text/css" href="assets/css/general.css">
     <link rel="stylesheet" type="text/css" href="assets/css/herosection.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reviews.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
@@ -68,5 +73,118 @@
         </div>
 
     </div>
+
+    <div id="reviews-section">
+
+        <div class="reviews-title">
+            <img src="assets/images/title-divider.png" alt="title-divider">
+            <p class="secondary-title">See Our Review</p>
+            <p class="primary-title">What Our User Say About Us</p>
+        </div>
+
+        <div class="reviews-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide review-card">
+                    <div class="review-image">
+                        <img src="assets/images/reviews/review-1/house-photo.jpeg" alt="review-1">
+                    </div>
+                    <div class="review-content">
+                        <p class="review-text">My house sold out fast!</p>
+                        <p class="review-description">I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!</p>
+                        <div class="review-user">
+                            <div class="reviewer-photo">
+                                <img src="assets/images/reviews/review-1/reviewer-photo.jpeg" alt="reviewer-photo">
+                            </div>
+                            <div class="reviewer-info">
+                                <div class="reviewer-name">
+                                    <p>Nama Pekerjaan</p>
+                                </div>
+                                <div class="reviewer-role">
+                                    <p>Product Manager</p>
+                                </div>
+                            </div>
+                            <div class="reviewer-rating">
+                                <img src="assets/images/reviews/stars.png" alt="star-icon">
+                                4.3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide review-card">
+                    <div class="review-image">
+                        <img src="assets/images/reviews/review-2/house-photo.jpeg" alt="review-1">
+                    </div>
+                    <div class="review-content">
+                        <p class="review-text">Best! I got the house I wanted through Hounter</p>
+                        <p class="review-description">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
+                        <div class="review-user">
+                            <div class="reviewer-photo">
+                                <img src="assets/images/reviews/review-2/reviewer-photo.jpeg" alt="reviewer-photo">
+                            </div>
+                            <div class="reviewer-info">
+                                <div class="reviewer-name">
+                                    <p>Dianne Russell</p>
+                                </div>
+                                <div class="reviewer-role">
+                                    <p>Manager Director</p>
+                                </div>
+                            </div>
+                            <div class="reviewer-rating">
+                                <img src="assets/images/reviews/stars.png" alt="star-icon">
+                                4.6
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide review-card">
+                    <div class="review-image">
+                        <img src="assets/images/reviews/review-3/house-photo.jpeg" alt="review-1">
+                    </div>
+                    <div class="review-content">
+                        <p class="review-text">Through the Hounter, I can get a house for my self</p>
+                        <p class="review-description">By looking for information about what kind of house we want, we managed to get the house we wanted very quickly, and directly connected with the seller to be able to ask about the details, very helpful!</p>
+                        <div class="review-user">
+                            <div class="reviewer-photo">
+                                <img src="assets/images/reviews/review-3/reviewer-photo.jpeg" alt="reviewer-photo">
+                            </div>
+                            <div class="reviewer-info">
+                                <div class="reviewer-name">
+                                    <p>Esther Howard</p>
+                                </div>
+                                <div class="reviewer-role">
+                                    <p>Head of Marketing</p>
+                                </div>
+                            </div>
+                            <div class="reviewer-rating">
+                                <img src="assets/images/reviews/stars.png" alt="star-icon">
+                                4.9
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="reviews-slider-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.reviews-slider', {
+            slidesPerView: 'auto',
+            spaceBetween: 100,
+            centeredSlides: true,
+            initialSlide: 1,
+            pagination: {
+                el: '.reviews-slider-pagination',
+                clickable: true,
+            },
+        });
+
+    </script>
 </body>
 </html>

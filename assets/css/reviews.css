@@ -1,0 +1,133 @@
+#reviews-section {
+    padding: 70px 0;
+}
+
+.reviews-title {
+    text-align: center;
+}
+
+.reviews-title .secondary-title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #F59E0B;
+}
+
+.reviews-title .primary-title {
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 5px;
+    color: #1B1C57;
+}
+
+.reviews-slider {
+    margin-top: 50px;
+    overflow: hidden;
+    padding-bottom: 200px;
+}
+
+.swiper-wrapper {
+    width: 100%;
+}
+
+.review-card {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+.review-image img {
+    display: block;
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.review-content {
+    position: absolute;
+    right: 70px;
+    left: 70px;
+    bottom: -40%;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 9px 32px #595CDB0D;
+}
+
+.review-content .review-text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: rgba(27, 28, 87, 1);
+}
+
+.review-content .review-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(98, 102, 135, 1);
+}
+
+.review-user {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.review-user .reviewer-photo img {
+    width: 40px;
+    border-radius: 32px;
+}
+
+.review-user .reviewer-info {
+    flex: 1;
+}
+
+.review-user .reviewer-info .reviewer-name {
+    font-weight: 500;
+    color: rgba(14, 23, 53, 1);
+    font-size: 14px;
+}
+
+.review-user .reviewer-info .reviewer-name p {
+    margin-bottom: 0px;
+}
+
+.review-user .reviewer-info .reviewer-role {
+    font-weight: 500;
+    color: rgba(136, 139, 151, 1);
+    font-size: 14px;
+}
+
+.review-user .reviewer-info .reviewer-role p {
+    margin-top: 7px;
+}
+
+.review-user .reviewer-rating img {
+    width: 28px;
+}
+
+.review-user .reviewer-rating {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(60, 69, 99, 1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.reviews-slider-pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-slider-pagination .swiper-pagination-bullet {
+    width: 8px;
+    background: rgba(224, 227, 235, 1);
+}
+
+.reviews-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: rgba(60, 69, 99, 1);
+}

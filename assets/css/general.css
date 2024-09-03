@@ -1,4 +1,7 @@
 body {
     margin: 0;
+}
+
+body, button, input, textarea, select {
     font-family: 'Lexend', sans-serif;
 }

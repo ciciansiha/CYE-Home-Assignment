@@ -150,8 +150,8 @@
     font-weight: 600;
     font-size: 16px;
     position: absolute;
-    right: 6px;
-    top: 6px;
+    right: 4px;
+    top: 4px;
     min-width: 25%;
     background-color: #10B981;
     color: white;
@@ -215,8 +215,7 @@
 
 }
 
-@media (max-width: 700px) {
-
+@media only screen and (max-width: 700px) {
     .hero-content .search {
         min-width: 90%;
     }
@@ -224,5 +223,25 @@
     .hero-content .text-secondary {
         max-width: 80%;
     }
-    
+}
+
+@media only screen and (max-width: 500px) {
+    .hero-content .search-button {
+        position: static;
+        min-width: 70%;
+    }
+    .hero-content .search {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .hero-content .search input {
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 434px) {
+    .partners .partners-logo {
+        justify-content: space-evenly;
+    }
 }

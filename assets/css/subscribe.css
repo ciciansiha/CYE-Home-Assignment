@@ -15,12 +15,12 @@
     width: 85%;
     display: flex;
     border-radius: 32px;
-    padding: 100px;
     box-sizing: border-box;
 }
 
 .subscribe-icons-left {
     flex: 1;
+    position: relative;
 }
 
 .subscribe-main-content {
@@ -29,6 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 100px 0;
 }
 
 .subscribe-main-content .subscribe-title {
@@ -87,10 +88,84 @@
 
 .subscribe-icons-right {
     flex: 1;
+    position: relative;
 }
 
+.subscribe-icon {
+    position: absolute;
+}
+
+.rectangle-lg {
+    width: 81px;
+    height: 81px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 24px;
+}
+
+.rectangle-md {
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 24px;
+}
+
+.rectangle-sm {
+    width: 55px;
+    height: 55px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 24px;
+}
+
+.circle-sm {
+    width: 36px;
+    height: 36px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 32px;
+    box-shadow: 0px 9px 32px 0px rgba(89, 92, 219, 0.1);
+}
+
+.position-top-left {
+    top: 10%;
+    left: 15%;
+}
+
+.position-top-right {
+    top: 18%;
+    right: 25%;
+}
+
+.position-mid-high-left {
+    top: 15%;
+    left: 15%;
+}
+
+.position-mid-left {
+    bottom: 40%;
+    left: 25%;
+}
+
+.position-mid-right {
+    top: 30%;
+    right: 25%;
+}
+
+.position-bottom-high-left {
+    bottom: 35%;
+    left: 20%;
+}
+
+.position-bottom-high-right {
+    bottom: 25%;
+    right: 20%;
+}
+
+.position-bottom-low-right {
+    bottom: 20%;
+    right: 20%;
+}
 
 @media (max-width: 1200px) {
+
     .subscribe-icons-right {
         display: none;
     }
@@ -100,4 +175,23 @@
     .subscribe-container {
         width: 90%;
     }
+
+}
+
+@media (max-width: 500px) {
+
+    .subscribe-main-content .subscribe-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .subscribe-main-content .subscribe-form .subscribe-button {
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .subscribe-main-content .subscribe-title { 
+        font-size: 24px;
+    }
+    
 }

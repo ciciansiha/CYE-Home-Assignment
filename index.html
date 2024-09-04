@@ -294,15 +294,25 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+        
         const swiper = new Swiper('.reviews-slider', {
-            slidesPerView: 'auto',
-            spaceBetween: 100,
-            centeredSlides: true,
             initialSlide: 1,
             pagination: {
                 el: '.reviews-slider-pagination',
                 clickable: true,
             },
+            breakpoints: {
+                0: { // Mobile and Tablet
+                    slidesPerView: 1,
+                    centeredSlides: false,
+                    spaceBetween: 0,
+                },
+                970: { // Desktop
+                    slidesPerView: 'auto',
+                    centeredSlides: true,
+                    spaceBetween: 100,
+                },
+            }
         });
 
     </script>

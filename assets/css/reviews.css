@@ -41,7 +41,7 @@
 
 .review-image img {
     display: block;
-    max-height: 400px;
+    height: 400px; /* can adjust this more */
     width: 100%;
     object-fit: cover;
 }
@@ -132,4 +132,24 @@
 
 .reviews-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: rgba(60, 69, 99, 1);
+}
+
+@media only screen and (max-width: 969px) {
+    .review-card {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .review-content {
+        right: 20px;
+        left: 20px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .review-content {
+        right: 10px;
+        left: 10px;
+    }
 }

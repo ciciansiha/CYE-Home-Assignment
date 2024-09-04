@@ -85,17 +85,12 @@
     background-color: #D1FAE5;
 }
 
-/* .menu-item .arrow-dropdown {
-    
-} */
-
 .hero-content {
     margin-top: 150px; /* TODO:: change to padding? */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    /* background-color: red; */
 }
 
 .hero-content .text-primary {
@@ -103,9 +98,8 @@
     line-height: 50px;
     font-weight: 800;
     color: #1B1C57;
-    max-width: 50%; /** change in mobile */
+    max-width: 50%;
     margin-bottom: 0;
-    /* background-color: yellow; */
 }
 
 .hero-content .text-primary span {
@@ -120,8 +114,7 @@
     line-height: 28px;
     font-weight: 400;
     max-width: 60%;
-    color: #1B1C57;
-    /* background-color: yellow; */
+    color: rgba(98, 102, 135, 1);
 }
 
 .hero-content .search {
@@ -136,8 +129,10 @@
     border: 1px solid #E0E3EB;
     border-radius: 32px;
     padding-left: 60px;
+    padding-right: 30%;
     font-size: 16px;
     outline: 0;
+    box-sizing: border-box;
 }
 
 .hero-content .search input::placeholder {
@@ -155,15 +150,15 @@
     font-weight: 600;
     font-size: 16px;
     position: absolute;
-    right: 1px;
-    top: 2px;
-    width: 25%;
+    right: 6px;
+    top: 6px;
+    min-width: 25%;
     background-color: #10B981;
     color: white;
     padding: 12px 16px 12px 16px;
     border: 0;
     border-radius: 32px;
-    height: 56px;
+    height: 48px;
 }
 
 .partners .partners-title {
@@ -176,13 +171,58 @@
     display: flex;
     align-items: center;
     gap: 35px;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 1240px) {
+
     .hero-right {
         display: none;
     }
+
     .hero-content {
         align-items: center;
+        margin-top: 50px;
     }
+
+    .hero-left {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+    }
+
+    .hero-content .text-primary {
+        font-size: 28px;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .hero-content .text-secondary {
+        max-width: 40%;
+    }
+
+    .hero-content .search input {
+        font-size: 14px;
+    }
+
+    .partners .partners-title {
+        text-align: center;
+    }
+
+    .partners .partners-logo {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .hero-content .search {
+        min-width: 90%;
+    }
+
+    .hero-content .text-secondary {
+        max-width: 80%;
+    }
+    
 }

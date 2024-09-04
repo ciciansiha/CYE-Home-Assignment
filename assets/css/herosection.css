@@ -114,7 +114,7 @@
     line-height: 28px;
     font-weight: 400;
     max-width: 60%;
-    color: #1B1C57;
+    color: rgba(98, 102, 135, 1);
 }
 
 .hero-content .search {
@@ -129,8 +129,10 @@
     border: 1px solid #E0E3EB;
     border-radius: 32px;
     padding-left: 60px;
+    padding-right: 30%;
     font-size: 16px;
     outline: 0;
+    box-sizing: border-box;
 }
 
 .hero-content .search input::placeholder {
@@ -150,7 +152,7 @@
     position: absolute;
     right: 6px;
     top: 6px;
-    width: 25%;
+    min-width: 25%;
     background-color: #10B981;
     color: white;
     padding: 12px 16px 12px 16px;
@@ -180,16 +182,27 @@
 
     .hero-content {
         align-items: center;
+        margin-top: 50px;
     }
 
     .hero-left {
         padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
     }
 
     .hero-content .text-primary {
         font-size: 28px;
         text-align: center;
         max-width: 90%;
+    }
+
+    .hero-content .text-secondary {
+        max-width: 40%;
+    }
+
+    .hero-content .search input {
+        font-size: 14px;
     }
 
     .partners .partners-title {
@@ -200,4 +213,16 @@
         gap: 20px;
     }
 
+}
+
+@media (max-width: 700px) {
+
+    .hero-content .search {
+        min-width: 90%;
+    }
+
+    .hero-content .text-secondary {
+        max-width: 80%;
+    }
+    
 }

@@ -42,7 +42,7 @@
 
             <div class="hero-content">
 
-                <p class="text-primary">Find The Place To Live <span>Your Dreams</span> Easily Here</p>
+                <p class="text-primary">Find The Place To Live <span class="jump">Your</span> <span class="jump">Dreams</span> Easily Here</p>
                 <p class="text-secondary">Everything you need about finding your place to live will be here, where it will be easier for you</p>
 
                 <div class="search">
@@ -298,32 +298,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-
-        document.addEventListener('DOMContentLoaded', () => {
-
-            const swiper = new Swiper('.reviews-slider', {
-                initialSlide: 1,
-                pagination: {
-                    el: '.reviews-slider-pagination',
-                    clickable: true,
-                },
-                breakpoints: {
-                    0: { // Mobile and Tablet
-                        slidesPerView: 1,
-                        centeredSlides: false,
-                        spaceBetween: 0,
-                    },
-                    970: { // Desktop
-                        slidesPerView: 'auto',
-                        centeredSlides: true,
-                        spaceBetween: 100,
-                    },
-                }
-            });
-
-        });
-
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="assets/js/GsapAnimation.js"></script>
+    <script src="assets/js/ReviewsSlider.js"></script>
 </body>
 </html>

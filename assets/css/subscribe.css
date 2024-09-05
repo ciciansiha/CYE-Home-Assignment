@@ -84,6 +84,12 @@
     color: white;
     font-size: 14px;
     font-weight: 600;
+    transition: background-color 300ms;
+}
+
+.subscribe-main-content .subscribe-form .subscribe-button:hover {
+    background-color: #047857;
+    cursor: pointer;
 }
 
 .subscribe-icons-right {

@@ -127,7 +127,8 @@
 
 .reviews-slider-pagination .swiper-pagination-bullet {
     width: 8px;
-    background: rgba(224, 227, 235, 1);
+    background: rgba(0, 0, 0, 1);
+    padding: 1px 1px;
 }
 
 .reviews-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {

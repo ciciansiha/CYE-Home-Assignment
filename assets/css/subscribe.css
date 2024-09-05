@@ -170,7 +170,7 @@
     right: 20%;
 }
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 
     .subscribe-icons-right {
         display: none;
@@ -184,7 +184,7 @@
 
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
 
     .subscribe-main-content .subscribe-form {
         display: flex;

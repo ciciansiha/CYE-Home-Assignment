@@ -67,14 +67,18 @@
 }
 
 .menu-item {
-    padding: 10px 16px 8px 16px;
+    padding: 10px 16px 10px 16px;
     border: 1px solid #FFFFFF4D;
     border-radius: 32px;
     color: white;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
+    transition: background-color 200ms;
+}
 
+.menu-item:hover {
+    background-color: #d4d4d441;
 }
 
 .menu-item:nth-child(4) {
@@ -83,6 +87,12 @@
     border: 0px;
     color: #047857;
     background-color: #D1FAE5;
+    transition: background-color 200ms, color 200ms;
+}
+
+.menu-item:nth-child(4):hover {
+    background-color: #06854391;
+    color: white;
 }
 
 .hero-content {
@@ -159,6 +169,12 @@
     border: 0;
     border-radius: 32px;
     height: 48px;
+    transition: background-color 300ms;
+}
+
+.hero-content .search-button:hover {
+    background-color: #047857;
+    cursor: pointer;
 }
 
 .partners .partners-title {

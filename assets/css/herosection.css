@@ -117,6 +117,10 @@
     -webkit-text-stroke: 1px black;
 }
 
+.jump {
+    display: inline-block;
+}
+
 .hero-content .text-secondary {
     margin-top: 0;
     margin-bottom: 0;

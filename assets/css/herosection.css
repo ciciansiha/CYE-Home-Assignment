@@ -20,7 +20,6 @@
     padding-top: 45px;
     background-image: url('../images/hero-section-image.png');
     background-repeat: no-repeat;
-    /* background-position: 0 -50px; */
     background-size: cover;
     border-bottom-left-radius: 80px;
 }
@@ -45,7 +44,7 @@
     margin-left: 15px;
     font-size: 16px;
     font-weight: 700;
-    line-height: 20px; /* probably won't need it */
+    line-height: 20px;
 }
 
 .logo-rectangle-8 {
@@ -96,7 +95,7 @@
 }
 
 .hero-content {
-    margin-top: 150px; /* TODO:: change to padding? */
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -216,7 +215,56 @@
     height: 42px;
 }
 
-@media (max-width: 1240px) {
+.menu-mobile-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-mobile-section .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-mobile-section .close-icon:hover {
+    cursor: pointer;
+}
+
+.menu-mobile-section .close-icon img {
+    width: 34px;
+    height: 34px;
+}
+
+.menu-mobile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.menu-mobile-content a {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1B1C57;
+    text-decoration: none;
+    transition: color 200ms;
+}
+
+.menu-mobile-content a:hover {
+    cursor: pointer;
+    color: #4be4c9;
+}
+
+@media only screen and (max-width: 1240px) {
 
     .hero-right {
         display: none;
@@ -231,6 +279,7 @@
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 30px;
+        padding-bottom: 70px;
     }
 
     .hero-content .text-primary {

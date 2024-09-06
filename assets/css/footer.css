@@ -44,6 +44,7 @@
     color: rgba(14, 23, 53, 1);
     font-size: 18px;
     font-weight: 600;
+    margin-top: 0px;
 }
 
 .footer-right p:not(.footer-title) {
@@ -52,7 +53,17 @@
     font-weight: 400;
 }
 
-@media (max-width: 1000px) {
+.footer-link {
+    text-decoration: none;
+    color: rgba(136, 139, 151, 1);
+    transition: color 300ms;
+}
+
+.footer-link:hover {
+    color: rgba(27, 28, 87, 1);
+}
+
+@media only screen and (max-width: 1000px) {
 
     .footer {
         grid-template-columns: 1fr;
@@ -84,9 +95,13 @@
         text-align: center;
     }
 
+    .footer-right .footer-title {
+        margin-top: 18px;
+    }
+
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .footer-content {
         width: 90%;
     }

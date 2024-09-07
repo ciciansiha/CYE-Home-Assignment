@@ -19,6 +19,7 @@
     font-size: 32px;
     margin-top: 5px;
     color: #1B1C57;
+    padding: 0 20px;
 }
 
 .reviews-slider {
@@ -41,7 +42,7 @@
 
 .review-image img {
     display: block;
-    height: 400px; /* can adjust this more */
+    height: 400px;
     width: 100%;
     object-fit: cover;
 }
